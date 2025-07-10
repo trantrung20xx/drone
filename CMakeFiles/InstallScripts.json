@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/trant/Documents/WorkSpace/Drone/cmake_install.cmake",
+		"C:/Users/trant/Documents/WorkSpace/Drone/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,14 @@
+{
+	"files.associations": {
+		"*.vim": "bat",
+		"*.json": "jsonc",
+		"*.cpp": "cpp",
+		"*.py": "python",
+		"software_timer.h": "c",
+		"scheduler.h": "c",
+		"tasks.h": "c",
+		"main.h": "c",
+		"stm32f401xe.h": "c",
+		"stddef.h": "c"
+	}
+}

@@ -1,0 +1,481 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Windows - 10.0.26100 - 
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
+      Id flags:  
+      
+      The output was:
+      1
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-exit.o): in function `exit':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text+0x14): undefined reference to `_exit'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_exit): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-exit.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-closer.o): in function `_close_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text+0xc): undefined reference to `_close'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_close): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-closer.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text+0xc): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text+0x14): undefined reference to `_lseek'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_lseek): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-lseekr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-readr.o): in function `_read_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text+0x14): undefined reference to `_read'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_read): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-readr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-writer.o): in function `_write_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text+0x14): undefined reference to `_write'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_write): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-writer.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text+0xc): undefined reference to `_sbrk'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_sbrk): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-sbrkr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text+0xc): dangerous relocation: unsupported relocation
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/4.0.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-exit.o): in function `exit':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text+0x14): undefined reference to `_exit'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_exit): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-exit.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-closer.o): in function `_close_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text+0xc): undefined reference to `_close'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_close): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-closer.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text+0xc): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text+0x14): undefined reference to `_lseek'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_lseek): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-lseekr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-readr.o): in function `_read_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text+0x14): undefined reference to `_read'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_read): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-readr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-writer.o): in function `_write_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text+0x14): undefined reference to `_write'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_write): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-writer.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text+0x14): dangerous relocation: unsupported relocation
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text+0xc): undefined reference to `_sbrk'
+      C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/ld.exe: (_sbrk): Unknown destination type (ARM/Thumb) in C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(libc_a-sbrkr.o)
+      C:/M/B/src/newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text+0xc): dangerous relocation: unsupported relocation
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/4.0.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-vupa0t"
+      binary: "C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-vupa0t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-vupa0t'
+        
+        Run Build Command(s): C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/ninja.exe -v cmTC_b67aa
+        [1/2] C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj -c C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-gcc.exe
+        Target: arm-none-eabi
+        Configured with: ../gcc-13.3.0/configure --prefix=/mingw64 --target=arm-none-eabi --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --disable-libada --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/mingw64/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect_function --with-multilib-list=rmprofile --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-linker-plugin-flags='LDFLAGS=-static-libstdc++\\ -static-libgcc\\ \\ -Wl,--stack,12582912' LDFLAGS=' -Wl,--disable-dynamicbase'
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/'
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/ -D__USES_INITFINI__ C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b67aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\trant\\AppData\\Local\\Temp\\cc4ur32X.s
+        GNU C11 (GCC) version 13.3.0 (arm-none-eabi)
+        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include-fixed"
+        ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 06d5b55308da34f3882b0147b89ed8ab
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/'
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj C:\\Users\\trant\\AppData\\Local\\Temp\\cc4ur32X.s
+        GNU assembler version 2.44 (arm-none-eabi) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7e-m+fp/hard/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_b67aa.a && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ar.exe qc libcmTC_b67aa.a  CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ranlib.exe libcmTC_b67aa.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include]
+        implicit include dirs: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include-fixed;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-vupa0t']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/ninja.exe -v cmTC_b67aa]
+        ignore line: [[1/2] C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj -c C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/mingw64 --target=arm-none-eabi --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --disable-libada --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/mingw64/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect_function --with-multilib-list=rmprofile --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-linker-plugin-flags='LDFLAGS=-static-libstdc++\\ -static-libgcc\\ \\ -Wl,--stack,12582912' LDFLAGS=' -Wl,--disable-dynamicbase']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/']
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/ -D__USES_INITFINI__ C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b67aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\trant\\AppData\\Local\\Temp\\cc4ur32X.s]
+        ignore line: [GNU C11 (GCC) version 13.3.0 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 06d5b55308da34f3882b0147b89ed8ab]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/']
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj C:\\Users\\trant\\AppData\\Local\\Temp\\cc4ur32X.s]
+        ignore line: [GNU assembler version 2.44 (arm-none-eabi) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7e-m+fp/hard/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_b67aa.a && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ar.exe qc libcmTC_b67aa.a  CMakeFiles/cmTC_b67aa.dir/CMakeCCompilerABI.c.obj && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ranlib.exe libcmTC_b67aa.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-u6zeza"
+      binary: "C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-u6zeza"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-u6zeza'
+        
+        Run Build Command(s): C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/ninja.exe -v cmTC_f0a40
+        [1/2] C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-g++.exe
+        Target: arm-none-eabi
+        Configured with: ../gcc-13.3.0/configure --prefix=/mingw64 --target=arm-none-eabi --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --disable-libada --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/mingw64/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect_function --with-multilib-list=rmprofile --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-linker-plugin-flags='LDFLAGS=-static-libstdc++\\ -static-libgcc\\ \\ -Wl,--stack,12582912' LDFLAGS=' -Wl,--disable-dynamicbase'
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/'
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/ -D__USES_INITFINI__ C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f0a40.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -Wextra -Wpedantic -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\trant\\AppData\\Local\\Temp\\ccQusNNL.s
+        GNU C++17 (GCC) version 13.3.0 (arm-none-eabi)
+        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include-fixed"
+        ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"
+        ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 7ba66b05935959252c401a92563e75ee
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/'
+         C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\trant\\AppData\\Local\\Temp\\ccQusNNL.s
+        GNU assembler version 2.44 (arm-none-eabi) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7e-m+fp/hard/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_f0a40.a && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ar.exe qc libcmTC_f0a40.a  CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ranlib.exe libcmTC_f0a40.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+          add: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0/backward]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+        collapse include dir [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include] ==> [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include]
+        implicit include dirs: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include/c++/13.3.0/backward;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/arm-none-eabi/13.3.0/include-fixed;C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/trant/Documents/WorkSpace/Drone/CMakeFiles/CMakeScratch/TryCompile-u6zeza']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/ninja.exe -v cmTC_f0a40]
+        ignore line: [[1/2] C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-g++.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: ../gcc-13.3.0/configure --prefix=/mingw64 --target=arm-none-eabi --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --disable-libada --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/mingw64/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect_function --with-multilib-list=rmprofile --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-linker-plugin-flags='LDFLAGS=-static-libstdc++\\ -static-libgcc\\ \\ -Wl,--stack,12582912' LDFLAGS=' -Wl,--disable-dynamicbase']
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/']
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/ -D__USES_INITFINI__ C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f0a40.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -Wextra -Wpedantic -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\trant\\AppData\\Local\\Temp\\ccQusNNL.s]
+        ignore line: [GNU C++17 (GCC) version 13.3.0 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/lib/gcc/../../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include/c++/13.3.0/backward]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/include-fixed]
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 7ba66b05935959252c401a92563e75ee]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/']
+        ignore line: [ C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\trant\\AppData\\Local\\Temp\\ccQusNNL.s]
+        ignore line: [GNU assembler version 2.44 (arm-none-eabi) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7e-m+fp/hard/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/trant/scoop/apps/msys2/2025-02-21/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_f0a40.a && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ar.exe qc libcmTC_f0a40.a  CMakeFiles/cmTC_f0a40.dir/CMakeCXXCompilerABI.cpp.obj && C:\\Users\\trant\\scoop\\apps\\msys2\\current\\mingw64\\bin\\arm-none-eabi-ranlib.exe libcmTC_f0a40.a && cd ."]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CXX': [1/2] C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] C:/Users/trant/scoop/apps/msys2/current/mingw64/bin/arm-none-eabi-g++.exe" "--version"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1271 (message)"
+      - "C:/Users/trant/scoop/apps/msys2/current/mingw64/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:35 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GCC) 13.3.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...
