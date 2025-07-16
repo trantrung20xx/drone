@@ -28,3 +28,12 @@
 37	137	7734411457893794	CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj	ca7173fd81b72f16
 26	162	7738807938327031	CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj	132ce863ec688fcc
 28	164	7734409187034037	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+105	637	7743941799320885	CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj	132ce863ec688fcc
+8	639	7743941798338870	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+114	640	7743941799403362	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+99	640	7743941799247716	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+640	1489	7743941804669798	Drone.elf	98f3976a16fa0a6f
+22	186	7743943999754922	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+187	350	7743944001403622	Drone.elf	98f3976a16fa0a6f
+26	212	7743944870276416	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+213	369	7743944872142033	Drone.elf	98f3976a16fa0a6f

@@ -1,9 +1,9 @@
 #include "button.h"
 
-__weak void BTN_OnLongPressed(Button_t* button) {}
-__weak void BTN_OnDoubleClicked(Button_t* button) {}
-__weak void BTN_OnPressed(Button_t* button) {}
-__weak void BTN_OnReleased(Button_t* button) {}
+__weak void BTN_OnLongPressed(Button_t* button) { (void)button; }
+__weak void BTN_OnDoubleClicked(Button_t* button) { (void)button; }
+__weak void BTN_OnPressed(Button_t* button) { (void)button; }
+__weak void BTN_OnReleased(Button_t* button) { (void)button; }
 
 void BTN_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
     button->state            = BUTTON_RELEASED;

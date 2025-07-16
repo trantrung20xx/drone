@@ -1150,6 +1150,26 @@ Discarded input sections
                 0x00000000       0x22 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UARTEx_ReceiveToIdle_DMA
                 0x00000000       0x56 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_OnLongPressed
+                0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_OnDoubleClicked
+                0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_OnPressed
+                0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_OnReleased
+                0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_Init
+                0x00000000       0x32 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_Handler
+                0x00000000       0x7e CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text.BTN_Handler_Callback
+                0x00000000       0x36 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
@@ -1307,6 +1327,7 @@ LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_
 LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+LOAD CMakeFiles/Drone.dir/Core/Src/button.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/main.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
