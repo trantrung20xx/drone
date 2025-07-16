@@ -37,3 +37,7 @@
 187	350	7743944001403622	Drone.elf	98f3976a16fa0a6f
 26	212	7743944870276416	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
 213	369	7743944872142033	Drone.elf	98f3976a16fa0a6f
+25	214	7743948928706266	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+5	215	7743948928491064	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+15	248	7743948928606252	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+248	408	7743948930927729	Drone.elf	98f3976a16fa0a6f

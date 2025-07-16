@@ -1153,19 +1153,19 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_OnLongPressed
+ .text.BTNx_OnPressed
                 0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_OnDoubleClicked
+ .text.BTNx_OnReleased
                 0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_OnPressed
+ .text.BTNx_OnLongPressed
                 0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_OnReleased
+ .text.BTNx_OnDoubleClicked
                 0x00000000        0x2 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_Init
+ .text.BTNx_Init
                 0x00000000       0x32 CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_Handler
+ .text.BTNx_Handler
                 0x00000000       0x7e CMakeFiles/Drone.dir/Core/Src/button.c.obj
- .text.BTN_Handler_Callback
+ .text.BTNx_Handler_Callback
                 0x00000000       0x36 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .ARM.attributes

@@ -1,11 +1,11 @@
 #include "button.h"
 
-__weak void BTN_OnLongPressed(Button_t* button) { (void)button; }
-__weak void BTN_OnDoubleClicked(Button_t* button) { (void)button; }
-__weak void BTN_OnPressed(Button_t* button) { (void)button; }
-__weak void BTN_OnReleased(Button_t* button) { (void)button; }
+__weak void BTNx_OnPressed(Button_t* button) { (void)button; }
+__weak void BTNx_OnReleased(Button_t* button) { (void)button; }
+__weak void BTNx_OnLongPressed(Button_t* button) { (void)button; }
+__weak void BTNx_OnDoubleClicked(Button_t* button) { (void)button; }
 
-void BTN_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
+void BTNx_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
     button->state            = BUTTON_RELEASED;
     button->GPIOx            = GPIOx;
     button->GPIO_Pin         = GPIO_Pin;
@@ -25,7 +25,7 @@ void BTN_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
     HAL_GPIO_Init(GPIOx, &GPIO_InitStruct);
 }
 
-void BTN_Handler(Button_t* button) {
+void BTNx_Handler(Button_t* button) {
     // Read the current state of the button
     uint8_t current_state = HAL_GPIO_ReadPin(button->GPIOx, button->GPIO_Pin);
     // Update the filter states
@@ -74,20 +74,20 @@ void BTN_Handler(Button_t* button) {
     }
 }
 
-void BTN_Handler_Callback(Button_t* button) {
-    BTN_Handler(button);
+void BTNx_Handler_Callback(Button_t* button) {
+    BTNx_Handler(button);
     switch (button->state) {
         case BUTTON_LONG_PRESSED:
-            BTN_OnLongPressed(button);
+            BTNx_OnLongPressed(button);
             break;
         case BUTTON_PRESSED:
-            BTN_OnPressed(button);
+            BTNx_OnPressed(button);
             break;
         case BUTTON_DOUBLE_CLICKED:
-            BTN_OnDoubleClicked(button);
+            BTNx_OnDoubleClicked(button);
             break;
         case BUTTON_RELEASED:
-            BTN_OnReleased(button);
+            BTNx_OnReleased(button);
             break;
         default:
             break;

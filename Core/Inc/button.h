@@ -32,14 +32,14 @@ typedef struct {
     uint32_t      last_press_time;  // Timestamp of the last button press
 } Button_t;
 
-void BTN_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-void BTN_Handler(Button_t* button);
-void BTN_Handler_Callback(Button_t* button);
+void BTNx_Init(Button_t* button, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+void BTNx_Handler(Button_t* button);
+void BTNx_Handler_Callback(Button_t* button);
 
 // Callbacks for button events
-void BTN_OnPressed(Button_t* button);
-void BTN_OnReleased(Button_t* button);
-void BTN_OnLongPressed(Button_t* button);
-void BTN_OnDoubleClicked(Button_t* button);
+void BTNx_OnPressed(Button_t* button);
+void BTNx_OnReleased(Button_t* button);
+void BTNx_OnLongPressed(Button_t* button);
+void BTNx_OnDoubleClicked(Button_t* button);
 
 #endif // INC_BUTTON_H_
