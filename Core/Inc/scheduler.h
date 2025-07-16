@@ -25,9 +25,9 @@ extern volatile uint32_t SCH_tick_counter;   // Current tick count
 
 uint32_t get_tick(void);
 void     SCH_Init(void);
-void     SCH_Add_Task(Task_t, uint32_t DELAY, uint32_t PERIOD);
+void     SCH_Add_Task(Task_t, uint32_t, uint32_t);
 void     SCH_Update(void);
 void     SCH_Dispatch_Tasks(void);
-void     SCH_Delete_Task(uint32_t TaskID);
+void     SCH_Delete_Task(uint32_t);
 
 #endif /* INC_SCHEDULER_H_ */

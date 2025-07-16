@@ -9,6 +9,8 @@
 		"tasks.h": "c",
 		"main.h": "c",
 		"stm32f401xe.h": "c",
-		"stddef.h": "c"
+		"stddef.h": "c",
+		"button.h": "c",
+		"stdint.h": "c"
 	}
 }
