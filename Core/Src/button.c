@@ -52,8 +52,9 @@ void BTNx_Handler(Button_t* button) {
         if (time_diff > TIME_THRESHOLT(LONG_PRESS) && button->counter == 0) {
             // Button long pressed
             if (button->state != BUTTON_LONG_PRESSED) {
-                button->state           = BUTTON_LONG_PRESSED;
-                button->counter         = -1; // Reset counter after long press
+                button->state   = BUTTON_LONG_PRESSED;
+                button->counter = -1; // Reset counter after long press
+                // button->counter will be incremented to 0 after the button is released
                 button->last_press_time = button->start_press_time;
             }
         } else if (time_diff > TIME_THRESHOLT(SHORT_PRESS) && button->counter == 1) {
