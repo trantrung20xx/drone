@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "button.h"
 #include "scheduler.h"
 #include "software_timer.h"
 #include "tasks.h"
@@ -114,8 +115,8 @@ int main(void) {
 
     while (1) {
         /* USER CODE END WHILE */
-        SCH_Dispatch_Tasks(); // Dispatch tasks
         /* USER CODE BEGIN 3 */
+        SCH_Dispatch_Tasks(); // Dispatch tasks
     }
     /* USER CODE END 3 */
 }
