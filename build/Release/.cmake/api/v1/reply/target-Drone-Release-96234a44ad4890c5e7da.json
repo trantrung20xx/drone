@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 89,
+				"line" : 88,
 				"parent" : 2
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 83,
+				"line" : 82,
 				"parent" : 2
 			}
 		]
@@ -109,8 +109,7 @@
 				5,
 				6,
 				7,
-				8,
-				9
+				8
 			]
 		},
 		{
@@ -157,7 +156,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				10
+				9
 			]
 		}
 	],
@@ -205,21 +204,21 @@
 				5,
 				6,
 				7,
-				8,
-				9
+				8
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				10
+				9
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
+				10,
 				11,
 				12,
 				13,
@@ -237,8 +236,7 @@
 				25,
 				26,
 				27,
-				28,
-				29
+				28
 			]
 		}
 	],
@@ -266,12 +264,6 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/scheduler.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/software_timer.c",
 			"sourceGroupIndex" : 0
 		},
 		{

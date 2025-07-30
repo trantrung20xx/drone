@@ -11,6 +11,7 @@
 		"stm32f401xe.h": "c",
 		"stddef.h": "c",
 		"button.h": "c",
-		"stdint.h": "c"
+		"stdint.h": "c",
+		"stm32f4xx_hal.h": "c"
 	}
 }

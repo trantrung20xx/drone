@@ -1,8 +1,11 @@
 #include "DHT11_22.h"
 
-void DHT11_22_Init(DHT11_22_t* sensor, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
+void DHT11_22_Init(
+    DHT11_22_t* sensor, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, DHT_Type type
+) {
     sensor->GPIOx    = GPIOx;
     sensor->GPIO_Pin = GPIO_Pin;
+    sensor->type     = type; // Set the sensor type (DHT11 or DHT22)
     for (int i = 0; i < 5; i++) {
         sensor->data[i] = 0; // Initialize data buffer
     }
@@ -46,8 +49,8 @@ uint8_t DHT11_22__readByte(DHT11_22_t* sensor) {
     uint8_t byte = 0;
     for (int i = 0; i < 8; i++) {
         while (HAL_GPIO_ReadPin(sensor->GPIOx, sensor->GPIO_Pin) == GPIO_PIN_RESET)
-            ; // Wait for the pin to go high (start of bit)
-        // delay_us(50); // Wait for 50 us to read the bit
+            ;         // Wait for the pin to go high (start of bit)
+        delay_us(35); // Wait for 35 us to read the bit
         if (HAL_GPIO_ReadPin(sensor->GPIOx, sensor->GPIO_Pin) == GPIO_PIN_SET) {
             // bit is 1
             byte = (byte << 1) | 1;
@@ -78,5 +81,31 @@ void DHT11_22_Handle(DHT11_22_t* sensor) {
     if (sensor->data[0] + sensor->data[1] + sensor->data[2] + sensor->data[3] !=
         sensor->checksum) {
         // Checksum is invalid, handle error
+    }
+}
+
+float DHT11_22_ReadHumidity(DHT11_22_t* sensor) {
+    if (sensor->type == DHT11) {
+        return (float)sensor->data[0]; // For DHT11, humidity is in byte 1
+    } else { // DHT22
+        float raw_humidity =
+            (sensor->data[0] << 8) | sensor->data[1]; // Combine bytes 1 and 2
+        return raw_humidity / 10.0f;                  // Convert to percentage
+    }
+}
+
+float DHT11_22_ReadTemperature(DHT11_22_t* sensor) {
+    if (sensor->type == DHT11) {
+        return (float)sensor->data[2]; // For DHT11, temperature is in byte 3
+    } else { // DHT22
+        uint16_t raw_temp = (sensor->data[2] << 8) | sensor->data[3]; // Combine bytes 3 and 4
+        if (sensor->data[2] & 0x8000) {
+            // If the sign bit is set, it's a negative temperature (DHT22)
+            raw_temp &= 0x7FFF;                // Clear the sign bit
+            return -(raw_temp / 10.0f); // Convert to negative temperature
+        } else {
+            // Positive temperature (DHT11 or positive DHT22)
+            return raw_temp / 10.0f; // Convert to temperature
+        }
     }
 }

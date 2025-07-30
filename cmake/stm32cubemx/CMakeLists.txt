@@ -23,7 +23,6 @@ set(MX_Application_Src
     ${CMAKE_SOURCE_DIR}/Core/Src/DHT11_22.c
     ${CMAKE_SOURCE_DIR}/Core/Src/main.c
     ${CMAKE_SOURCE_DIR}/Core/Src/scheduler.c
-    ${CMAKE_SOURCE_DIR}/Core/Src/software_timer.c
     ${CMAKE_SOURCE_DIR}/Core/Src/stm32f4xx_it.c
     ${CMAKE_SOURCE_DIR}/Core/Src/stm32f4xx_hal_msp.c
     ${CMAKE_SOURCE_DIR}/Core/Src/sysmem.c

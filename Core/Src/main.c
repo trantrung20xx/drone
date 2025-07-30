@@ -23,7 +23,6 @@
 /* USER CODE BEGIN Includes */
 #include "button.h"
 #include "scheduler.h"
-#include "software_timer.h"
 #include "tasks.h"
 
 /* USER CODE END Includes */
@@ -48,6 +47,7 @@ I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim3;
 
 UART_HandleTypeDef huart2;
 
@@ -62,6 +62,7 @@ static void MX_I2C1_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -103,10 +104,11 @@ int main(void) {
     MX_TIM1_Init();
     MX_USART2_UART_Init();
     MX_TIM2_Init();
+    MX_TIM3_Init();
     /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim2);
     SCH_Init(); // Initialize the scheduler
-    /* USER CODE END 2 */
+                /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
@@ -115,6 +117,7 @@ int main(void) {
 
     while (1) {
         /* USER CODE END WHILE */
+
         /* USER CODE BEGIN 3 */
         SCH_Dispatch_Tasks(); // Dispatch tasks
     }
@@ -288,7 +291,7 @@ static void MX_TIM2_Init(void) {
     if (HAL_TIM_Base_Init(&htim2) != HAL_OK) {
         Error_Handler();
     }
-    sClockSourceConfig.ClockSource    = TIM_CLOCKSOURCE_INTERNAL;
+    sClockSourceConfig.ClockSource    = TIM_CLOCKSOURCE_ETRMODE2;
     sClockSourceConfig.ClockPolarity  = TIM_CLOCKPOLARITY_NONINVERTED;
     sClockSourceConfig.ClockPrescaler = TIM_CLOCKPRESCALER_DIV1;
     sClockSourceConfig.ClockFilter    = 0;
@@ -304,6 +307,46 @@ static void MX_TIM2_Init(void) {
     HAL_NVIC_SetPriority(TIM2_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM2_IRQn);
     /* USER CODE END TIM2_Init 2 */
+}
+
+/**
+ * @brief TIM3 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_TIM3_Init(void) {
+
+    /* USER CODE BEGIN TIM3_Init 0 */
+
+    /* USER CODE END TIM3_Init 0 */
+
+    TIM_ClockConfigTypeDef  sClockSourceConfig = {0};
+    TIM_MasterConfigTypeDef sMasterConfig      = {0};
+
+    /* USER CODE BEGIN TIM3_Init 1 */
+
+    /* USER CODE END TIM3_Init 1 */
+    htim3.Instance               = TIM3;
+    htim3.Init.Prescaler         = 83;
+    htim3.Init.CounterMode       = TIM_COUNTERMODE_UP;
+    htim3.Init.Period            = 65535;
+    htim3.Init.ClockDivision     = TIM_CLOCKDIVISION_DIV1;
+    htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+    if (HAL_TIM_Base_Init(&htim3) != HAL_OK) {
+        Error_Handler();
+    }
+    sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+    if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK) {
+        Error_Handler();
+    }
+    sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+    sMasterConfig.MasterSlaveMode     = TIM_MASTERSLAVEMODE_DISABLE;
+    if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK) {
+        Error_Handler();
+    }
+    /* USER CODE BEGIN TIM3_Init 2 */
+
+    /* USER CODE END TIM3_Init 2 */
 }
 
 /**
@@ -376,6 +419,17 @@ static void MX_GPIO_Init(void) {
 }
 
 /* USER CODE BEGIN 4 */
+
+// delay_us function to create a delay in microseconds
+void delay_us(uint32_t us) {
+    __HAL_TIM_SET_COUNTER(&htim3, 0); // Reset the timer counter
+    HAL_TIM_Base_Start(&htim3);       // Start the timer
+    while (__HAL_TIM_GET_COUNTER(&htim3) < us)
+        ; // Wait until the timer counter reaches the desired delay
+    HAL_TIM_Base_Stop(&htim3); // Stop the timer
+}
+
+// This function is called when the timer interrupt occurs
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
     if (htim->Instance == TIM2) {
         SCH_Update(); // Update the scheduler tick
