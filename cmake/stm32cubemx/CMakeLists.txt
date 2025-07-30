@@ -20,6 +20,7 @@ set(MX_Include_Dirs
 # STM32CubeMX generated application sources
 set(MX_Application_Src
     ${CMAKE_SOURCE_DIR}/Core/Src/button.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/DHT11_22.c
     ${CMAKE_SOURCE_DIR}/Core/Src/main.c
     ${CMAKE_SOURCE_DIR}/Core/Src/scheduler.c
     ${CMAKE_SOURCE_DIR}/Core/Src/software_timer.c
