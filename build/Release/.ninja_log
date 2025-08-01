@@ -1,10 +1,10 @@
 # ninja log v7
 55	567	7733134324213890	CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj	6866d2b0d8eab01d
 41	529	7733134324081934	CMakeFiles/Drone.dir/Core/Src/sysmem.c.obj	baf5b2033bb4d9b8
-15	248	7743948928606252	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
-26	397	7734048279981685	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj	d157174414d6a8ec
+33	809	7755767181204552	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+77	806	7755767181652024	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj	d157174414d6a8ec
 62	549	7733134324291288	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj	c20e16792cb78622
-21	397	7734048279926910	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj	62f2fb52caee7438
+62	802	7755767181495850	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj	62f2fb52caee7438
 120	576	7733134324862880	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj	3e4b5abc64fff809
 78	558	7733134324448430	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj	46fcc380ccb6da8b
 103	626	7733134324699162	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj	a807fae491ff03b5
@@ -24,8 +24,9 @@
 673	1536	7733134330403389	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj	fb03c2e6d954d5
 70	1524	7733134324370664	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj	ed4f14abb625d648
 604	1717	7733134329712557	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj	570f3757f264f303
-248	408	7743948930927729	Drone.elf	98f3976a16fa0a6f
+810	1596	7755767188962349	Drone.elf	e718657d07182632
 37	137	7734411457893794	CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj	ca7173fd81b72f16
-105	637	7743941799320885	CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj	132ce863ec688fcc
-25	214	7743948928706266	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
-5	215	7743948928491064	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+47	810	7755767181334066	CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj	132ce863ec688fcc
+91	803	7755767181786408	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+6	807	7755767180939484	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
+21	800	7755767181088096	CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj	11146964a58e9cf4

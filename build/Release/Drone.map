@@ -1170,9 +1170,33 @@ Discarded input sections
  .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/button.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/button.c.obj
+ .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22_Init
+                0x00000000        0xe CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22__setToInputMode
+                0x00000000       0x20 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22__setToOutputMode
+                0x00000000       0x20 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22__sendStartSignal
+                0x00000000       0x4e CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22__readByte
+                0x00000000       0x42 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22_Handle
+                0x00000000       0x26 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22_ReadHumidity
+                0x00000000       0x28 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .text.DHT11_22_ReadTemperature
+                0x00000000       0x28 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+ .text.delay_us
+                0x00000000       0x28 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .text.Error_Handler
                 0x00000000        0x4 CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
@@ -1182,20 +1206,6 @@ Discarded input sections
                 0x00000000        0xc CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .text.SCH_Delete_Task
                 0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .text.SetupTimer2
-                0x00000000       0x1c CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .text.timer2Run
-                0x00000000       0x2c CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .bss.timer2_flag
-                0x00000000        0x4 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .bss.timer2_count
-                0x00000000        0x4 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
- .ARM.attributes
-                0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
@@ -1207,7 +1217,7 @@ Discarded input sections
  .text.HAL_TIM_PWM_MspDeInit
                 0x00000000       0x1c CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .text.HAL_TIM_Base_MspDeInit
-                0x00000000       0x30 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000000       0x48 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .text.HAL_UART_MspDeInit
                 0x00000000       0x28 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/sysmem.c.obj
@@ -1328,9 +1338,9 @@ LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_
 LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 LOAD cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/button.c.obj
+LOAD CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/main.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-LOAD CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/sysmem.c.obj
@@ -1359,7 +1369,7 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x08000198                        . = ALIGN (0x4)
 
-.text           0x08000198     0x1c88
+.text           0x08000198     0x1d10
                 0x08000198                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000198       0x40 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -1498,228 +1508,228 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x080016d4       0xa0 CMakeFiles/Drone.dir/Core/Src/main.c.obj
                 0x080016d4                SystemClock_Config
  .text.startup.main
-                0x08001774      0x278 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x08001774      0x2d8 CMakeFiles/Drone.dir/Core/Src/main.c.obj
                 0x08001774                main
  .text.HAL_TIM_PeriodElapsedCallback
-                0x080019ec        0xe CMakeFiles/Drone.dir/Core/Src/main.c.obj
-                0x080019ec                HAL_TIM_PeriodElapsedCallback
- *fill*         0x080019fa        0x2 
+                0x08001a4c        0xe CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x08001a4c                HAL_TIM_PeriodElapsedCallback
+ *fill*         0x08001a5a        0x2 
  .text.SCH_Init
-                0x080019fc       0x18 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x080019fc                SCH_Init
- .text.swap     0x08001a14       0x22 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001a14                swap
- *fill*         0x08001a36        0x2 
+                0x08001a5c       0x18 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001a5c                SCH_Init
+ .text.swap     0x08001a74       0x22 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001a74                swap
+ *fill*         0x08001a96        0x2 
  .text.heapify_up
-                0x08001a38       0x28 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001a38                heapify_up
+                0x08001a98       0x28 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001a98                heapify_up
  .text.heapify_down
-                0x08001a60       0x60 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001a60                heapify_down
+                0x08001ac0       0x60 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001ac0                heapify_down
  .text.SCH_Add_Task
-                0x08001ac0       0x54 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001ac0                SCH_Add_Task
+                0x08001b20       0x54 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001b20                SCH_Add_Task
  .text.SCH_Update
-                0x08001b14       0x10 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001b14                SCH_Update
+                0x08001b74       0x10 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001b74                SCH_Update
  .text.SCH_Dispatch_Tasks
-                0x08001b24       0x58 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08001b24                SCH_Dispatch_Tasks
+                0x08001b84       0x58 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08001b84                SCH_Dispatch_Tasks
  .text.NMI_Handler
-                0x08001b7c        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b7c                NMI_Handler
+                0x08001bdc        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001bdc                NMI_Handler
  .text.HardFault_Handler
-                0x08001b7e        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b7e                HardFault_Handler
+                0x08001bde        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001bde                HardFault_Handler
  .text.MemManage_Handler
-                0x08001b80        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b80                MemManage_Handler
+                0x08001be0        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001be0                MemManage_Handler
  .text.BusFault_Handler
-                0x08001b82        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b82                BusFault_Handler
+                0x08001be2        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001be2                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001b84        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b84                UsageFault_Handler
+                0x08001be4        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001be4                UsageFault_Handler
  .text.SVC_Handler
-                0x08001b86        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b86                SVC_Handler
+                0x08001be6        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001be6                SVC_Handler
  .text.DebugMon_Handler
-                0x08001b88        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b88                DebugMon_Handler
+                0x08001be8        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001be8                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001b8a        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b8a                PendSV_Handler
+                0x08001bea        0x2 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001bea                PendSV_Handler
  .text.SysTick_Handler
-                0x08001b8c        0x4 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b8c                SysTick_Handler
+                0x08001bec        0x4 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001bec                SysTick_Handler
  .text.TIM2_IRQHandler
-                0x08001b90        0xc CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001b90                TIM2_IRQHandler
+                0x08001bf0        0xc CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001bf0                TIM2_IRQHandler
  .text.HAL_MspInit
-                0x08001b9c       0x38 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001b9c                HAL_MspInit
+                0x08001bfc       0x38 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001bfc                HAL_MspInit
  .text.HAL_I2C_MspInit
-                0x08001bd4       0x6c CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001bd4                HAL_I2C_MspInit
+                0x08001c34       0x6c CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001c34                HAL_I2C_MspInit
  .text.HAL_TIM_PWM_MspInit
-                0x08001c40       0x30 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001c40                HAL_TIM_PWM_MspInit
+                0x08001ca0       0x30 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001ca0                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x08001c70       0x70 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001c70                HAL_TIM_Base_MspInit
+                0x08001cd0       0x98 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001cd0                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08001ce0       0x58 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001ce0                HAL_TIM_MspPostInit
+                0x08001d68       0x58 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001d68                HAL_TIM_MspPostInit
  .text.HAL_UART_MspInit
-                0x08001d38       0x6c CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001d38                HAL_UART_MspInit
+                0x08001dc0       0x6c CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001dc0                HAL_UART_MspInit
  .text.ToggleLED
-                0x08001da4       0x10 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08001da4                ToggleLED
+                0x08001e2c       0x10 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08001e2c                ToggleLED
  .text.Reset_Handler
-                0x08001db4       0x50 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
-                0x08001db4                Reset_Handler
+                0x08001e3c       0x50 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
+                0x08001e3c                Reset_Handler
  .text.Default_Handler
-                0x08001e04        0x2 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
-                0x08001e04                RTC_Alarm_IRQHandler
-                0x08001e04                EXTI2_IRQHandler
-                0x08001e04                SPI4_IRQHandler
-                0x08001e04                TIM1_CC_IRQHandler
-                0x08001e04                DMA2_Stream5_IRQHandler
-                0x08001e04                DMA1_Stream5_IRQHandler
-                0x08001e04                PVD_IRQHandler
-                0x08001e04                SDIO_IRQHandler
-                0x08001e04                TAMP_STAMP_IRQHandler
-                0x08001e04                EXTI3_IRQHandler
-                0x08001e04                TIM1_UP_TIM10_IRQHandler
-                0x08001e04                I2C3_ER_IRQHandler
-                0x08001e04                EXTI0_IRQHandler
-                0x08001e04                I2C2_EV_IRQHandler
-                0x08001e04                DMA1_Stream2_IRQHandler
-                0x08001e04                FPU_IRQHandler
-                0x08001e04                DMA2_Stream2_IRQHandler
-                0x08001e04                SPI1_IRQHandler
-                0x08001e04                TIM1_BRK_TIM9_IRQHandler
-                0x08001e04                DMA2_Stream3_IRQHandler
-                0x08001e04                USART6_IRQHandler
-                0x08001e04                DMA2_Stream0_IRQHandler
-                0x08001e04                TIM4_IRQHandler
-                0x08001e04                I2C1_EV_IRQHandler
-                0x08001e04                DMA1_Stream6_IRQHandler
-                0x08001e04                DMA1_Stream1_IRQHandler
-                0x08001e04                TIM3_IRQHandler
-                0x08001e04                RCC_IRQHandler
-                0x08001e04                Default_Handler
-                0x08001e04                EXTI15_10_IRQHandler
-                0x08001e04                ADC_IRQHandler
-                0x08001e04                DMA1_Stream7_IRQHandler
-                0x08001e04                SPI5_IRQHandler
-                0x08001e04                TIM5_IRQHandler
-                0x08001e04                DMA2_Stream7_IRQHandler
-                0x08001e04                I2C3_EV_IRQHandler
-                0x08001e04                EXTI9_5_IRQHandler
-                0x08001e04                RTC_WKUP_IRQHandler
-                0x08001e04                SPI2_IRQHandler
-                0x08001e04                DMA1_Stream0_IRQHandler
-                0x08001e04                EXTI4_IRQHandler
-                0x08001e04                WWDG_IRQHandler
-                0x08001e04                OTG_FS_WKUP_IRQHandler
-                0x08001e04                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08001e04                EXTI1_IRQHandler
-                0x08001e04                USART2_IRQHandler
-                0x08001e04                I2C2_ER_IRQHandler
-                0x08001e04                DMA2_Stream1_IRQHandler
-                0x08001e04                FLASH_IRQHandler
-                0x08001e04                DMA2_Stream4_IRQHandler
-                0x08001e04                USART1_IRQHandler
-                0x08001e04                OTG_FS_IRQHandler
-                0x08001e04                SPI3_IRQHandler
-                0x08001e04                DMA1_Stream4_IRQHandler
-                0x08001e04                I2C1_ER_IRQHandler
-                0x08001e04                DMA2_Stream6_IRQHandler
-                0x08001e04                DMA1_Stream3_IRQHandler
+                0x08001e8c        0x2 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
+                0x08001e8c                RTC_Alarm_IRQHandler
+                0x08001e8c                EXTI2_IRQHandler
+                0x08001e8c                SPI4_IRQHandler
+                0x08001e8c                TIM1_CC_IRQHandler
+                0x08001e8c                DMA2_Stream5_IRQHandler
+                0x08001e8c                DMA1_Stream5_IRQHandler
+                0x08001e8c                PVD_IRQHandler
+                0x08001e8c                SDIO_IRQHandler
+                0x08001e8c                TAMP_STAMP_IRQHandler
+                0x08001e8c                EXTI3_IRQHandler
+                0x08001e8c                TIM1_UP_TIM10_IRQHandler
+                0x08001e8c                I2C3_ER_IRQHandler
+                0x08001e8c                EXTI0_IRQHandler
+                0x08001e8c                I2C2_EV_IRQHandler
+                0x08001e8c                DMA1_Stream2_IRQHandler
+                0x08001e8c                FPU_IRQHandler
+                0x08001e8c                DMA2_Stream2_IRQHandler
+                0x08001e8c                SPI1_IRQHandler
+                0x08001e8c                TIM1_BRK_TIM9_IRQHandler
+                0x08001e8c                DMA2_Stream3_IRQHandler
+                0x08001e8c                USART6_IRQHandler
+                0x08001e8c                DMA2_Stream0_IRQHandler
+                0x08001e8c                TIM4_IRQHandler
+                0x08001e8c                I2C1_EV_IRQHandler
+                0x08001e8c                DMA1_Stream6_IRQHandler
+                0x08001e8c                DMA1_Stream1_IRQHandler
+                0x08001e8c                TIM3_IRQHandler
+                0x08001e8c                RCC_IRQHandler
+                0x08001e8c                Default_Handler
+                0x08001e8c                EXTI15_10_IRQHandler
+                0x08001e8c                ADC_IRQHandler
+                0x08001e8c                DMA1_Stream7_IRQHandler
+                0x08001e8c                SPI5_IRQHandler
+                0x08001e8c                TIM5_IRQHandler
+                0x08001e8c                DMA2_Stream7_IRQHandler
+                0x08001e8c                I2C3_EV_IRQHandler
+                0x08001e8c                EXTI9_5_IRQHandler
+                0x08001e8c                RTC_WKUP_IRQHandler
+                0x08001e8c                SPI2_IRQHandler
+                0x08001e8c                DMA1_Stream0_IRQHandler
+                0x08001e8c                EXTI4_IRQHandler
+                0x08001e8c                WWDG_IRQHandler
+                0x08001e8c                OTG_FS_WKUP_IRQHandler
+                0x08001e8c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08001e8c                EXTI1_IRQHandler
+                0x08001e8c                USART2_IRQHandler
+                0x08001e8c                I2C2_ER_IRQHandler
+                0x08001e8c                DMA2_Stream1_IRQHandler
+                0x08001e8c                FLASH_IRQHandler
+                0x08001e8c                DMA2_Stream4_IRQHandler
+                0x08001e8c                USART1_IRQHandler
+                0x08001e8c                OTG_FS_IRQHandler
+                0x08001e8c                SPI3_IRQHandler
+                0x08001e8c                DMA1_Stream4_IRQHandler
+                0x08001e8c                I2C1_ER_IRQHandler
+                0x08001e8c                DMA2_Stream6_IRQHandler
+                0x08001e8c                DMA1_Stream3_IRQHandler
  *(.glue_7)
- .glue_7        0x08001e06        0x0 linker stubs
+ .glue_7        0x08001e8e        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08001e06        0x0 linker stubs
+ .glue_7t       0x08001e8e        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x08001e06        0x2 
- .eh_frame      0x08001e08        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x08001e8e        0x2 
+ .eh_frame      0x08001e90        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08001e08        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08001e08                _init
- .init          0x08001e0c        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08001e90        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08001e90                _init
+ .init          0x08001e94        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08001e14        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08001e14                _fini
- .fini          0x08001e18        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08001e20                        . = ALIGN (0x4)
-                0x08001e20                        _etext = .
+ .fini          0x08001e9c        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08001e9c                _fini
+ .fini          0x08001ea0        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08001ea8                        . = ALIGN (0x4)
+                0x08001ea8                        _etext = .
 
-.vfp11_veneer   0x08001e20        0x0
- .vfp11_veneer  0x08001e20        0x0 linker stubs
+.vfp11_veneer   0x08001ea8        0x0
+ .vfp11_veneer  0x08001ea8        0x0 linker stubs
 
-.v4_bx          0x08001e20        0x0
- .v4_bx         0x08001e20        0x0 linker stubs
+.v4_bx          0x08001ea8        0x0
+ .v4_bx         0x08001ea8        0x0 linker stubs
 
-.iplt           0x08001e20        0x0
- .iplt          0x08001e20        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08001ea8        0x0
+ .iplt          0x08001ea8        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08001e20       0x18
-                0x08001e20                        . = ALIGN (0x4)
+.rodata         0x08001ea8       0x18
+                0x08001ea8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.APBPrescTable
-                0x08001e20        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08001e20                APBPrescTable
+                0x08001ea8        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08001ea8                APBPrescTable
  .rodata.AHBPrescTable
-                0x08001e28       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08001e28                AHBPrescTable
-                0x08001e38                        . = ALIGN (0x4)
+                0x08001eb0       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08001eb0                AHBPrescTable
+                0x08001ec0                        . = ALIGN (0x4)
 
-.ARM.extab      0x08001e38        0x0
-                0x08001e38                        . = ALIGN (0x4)
+.ARM.extab      0x08001ec0        0x0
+                0x08001ec0                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08001e38                        . = ALIGN (0x4)
+                0x08001ec0                        . = ALIGN (0x4)
 
-.ARM            0x08001e38        0x8
-                0x08001e38                        . = ALIGN (0x4)
-                0x08001e38                        __exidx_start = .
+.ARM            0x08001ec0        0x8
+                0x08001ec0                        . = ALIGN (0x4)
+                0x08001ec0                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08001e38        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08001e40                        __exidx_end = .
-                0x08001e40                        . = ALIGN (0x4)
+ .ARM.exidx     0x08001ec0        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08001ec8                        __exidx_end = .
+                0x08001ec8                        . = ALIGN (0x4)
 
-.preinit_array  0x08001e40        0x0
-                0x08001e40                        . = ALIGN (0x4)
-                0x08001e40                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08001ec8        0x0
+                0x08001ec8                        . = ALIGN (0x4)
+                0x08001ec8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08001e40                        PROVIDE (__preinit_array_end = .)
-                0x08001e40                        . = ALIGN (0x4)
+                0x08001ec8                        PROVIDE (__preinit_array_end = .)
+                0x08001ec8                        . = ALIGN (0x4)
 
-.init_array     0x08001e40        0x4
-                0x08001e40                        . = ALIGN (0x4)
-                0x08001e40                        PROVIDE (__init_array_start = .)
+.init_array     0x08001ec8        0x4
+                0x08001ec8                        . = ALIGN (0x4)
+                0x08001ec8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08001e40        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08001e44                        PROVIDE (__init_array_end = .)
-                0x08001e44                        . = ALIGN (0x4)
+ .init_array    0x08001ec8        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08001ecc                        PROVIDE (__init_array_end = .)
+                0x08001ecc                        . = ALIGN (0x4)
 
-.fini_array     0x08001e44        0x4
-                0x08001e44                        . = ALIGN (0x4)
+.fini_array     0x08001ecc        0x4
+                0x08001ecc                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08001e44        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08001ecc        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08001e48                        . = ALIGN (0x4)
-                0x08001e48                        _sidata = LOADADDR (.data)
+                0x08001ed0                        . = ALIGN (0x4)
+                0x08001ed0                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08001e48        0x0
- .rel.iplt      0x08001e48        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08001ed0        0x0
+ .rel.iplt      0x08001ed0        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x10 load address 0x08001e48
+.data           0x20000000       0x10 load address 0x08001ed0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1743,11 +1753,11 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  *fill*         0x2000000d        0x3 
                 0x20000010                        _edata = .
 
-.igot.plt       0x20000010        0x0 load address 0x08001e58
+.igot.plt       0x20000010        0x0 load address 0x08001ee0
  .igot.plt      0x20000010        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000010                        . = ALIGN (0x4)
 
-.bss            0x20000010      0x354 load address 0x08001e58
+.bss            0x20000010      0x39c load address 0x08001ee0
                 0x20000010                        _sbss = .
                 0x20000010                        __bss_start__ = _sbss
  *(.bss)
@@ -1757,38 +1767,40 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x2000002c                uwTick
  .bss.huart2    0x20000030       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
                 0x20000030                huart2
- .bss.htim2     0x20000078       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
-                0x20000078                htim2
- .bss.htim1     0x200000c0       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
-                0x200000c0                htim1
- .bss.hi2c1     0x20000108       0x54 CMakeFiles/Drone.dir/Core/Src/main.c.obj
-                0x20000108                hi2c1
+ .bss.htim3     0x20000078       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x20000078                htim3
+ .bss.htim2     0x200000c0       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x200000c0                htim2
+ .bss.htim1     0x20000108       0x48 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x20000108                htim1
+ .bss.hi2c1     0x20000150       0x54 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+                0x20000150                hi2c1
  .bss.SCH_tick_counter
-                0x2000015c        0x4 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x2000015c                SCH_tick_counter
+                0x200001a4        0x4 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x200001a4                SCH_tick_counter
  .bss.current_task_index
-                0x20000160        0x1 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x20000160                current_task_index
- *fill*         0x20000161        0x3 
+                0x200001a8        0x1 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x200001a8                current_task_index
+ *fill*         0x200001a9        0x3 
  .bss.SCH_tasks
-                0x20000164      0x200 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x20000164                SCH_tasks
+                0x200001ac      0x200 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x200001ac                SCH_tasks
  *(COMMON)
-                0x20000364                        . = ALIGN (0x4)
-                0x20000364                        _ebss = .
-                0x20000364                        __bss_end__ = _ebss
+                0x200003ac                        . = ALIGN (0x4)
+                0x200003ac                        _ebss = .
+                0x200003ac                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000364     0x1004 load address 0x08001e58
-                0x20000368                        . = ALIGN (0x8)
- *fill*         0x20000364        0x4 
+                0x200003ac     0x1004 load address 0x08001ee0
+                0x200003b0                        . = ALIGN (0x8)
+ *fill*         0x200003ac        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000368                        PROVIDE (_end = .)
-                0x20000b68                        . = (. + _Min_Heap_Size)
- *fill*         0x20000368      0x800 
-                0x20001368                        . = (. + _Min_Stack_Size)
- *fill*         0x20000b68      0x800 
-                0x20001368                        . = ALIGN (0x8)
+                0x200003b0                        PROVIDE (_end = .)
+                0x20000bb0                        . = (. + _Min_Heap_Size)
+ *fill*         0x200003b0      0x800 
+                0x200013b0                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000bb0      0x800 
+                0x200013b0                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
