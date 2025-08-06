@@ -466,7 +466,8 @@ static void MX_USART2_UART_Init(void) {
         Error_Handler();
     }
     /* USER CODE BEGIN USART2_Init 2 */
-
+    HAL_NVIC_SetPriority(USART2_IRQn, 0, 3); // Set USART2 interrupt priority
+    HAL_NVIC_EnableIRQ(USART2_IRQn);         // Enable USART2 interrupt
     /* USER CODE END USART2_Init 2 */
 }
 
