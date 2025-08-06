@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 88,
+				"line" : 84,
 				"parent" : 2
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 82,
+				"line" : 78,
 				"parent" : 2
 			}
 		]
@@ -105,11 +105,7 @@
 				1,
 				2,
 				3,
-				4,
-				5,
-				6,
-				7,
-				8
+				4
 			]
 		},
 		{
@@ -156,7 +152,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				9
+				5
 			]
 		}
 	],
@@ -200,24 +196,24 @@
 				1,
 				2,
 				3,
-				4,
-				5,
-				6,
-				7,
-				8
+				4
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				9
+				5
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
+				6,
+				7,
+				8,
+				9,
 				10,
 				11,
 				12,
@@ -232,11 +228,7 @@
 				21,
 				22,
 				23,
-				24,
-				25,
-				26,
-				27,
-				28
+				24
 			]
 		}
 	],
@@ -245,25 +237,7 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/button.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/DHT11_22.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
 			"path" : "Core/Src/main.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/scheduler.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -288,12 +262,6 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/syscalls.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/tasks.c",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -329,7 +329,7 @@ static void MX_TIM2_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM2_Init 2 */
-    HAL_NVIC_SetPriority(TIM2_IRQn, 1, 0);
+    HAL_NVIC_SetPriority(TIM2_IRQn, 2, 0);
     HAL_NVIC_EnableIRQ(TIM2_IRQn);
   /* USER CODE END TIM2_Init 2 */
 
@@ -420,7 +420,7 @@ static void MX_TIM4_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM4_Init 2 */
-  HAL_NVIC_SetPriority(TIM4_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(TIM4_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(TIM4_IRQn);
   /* USER CODE END TIM4_Init 2 */
 
