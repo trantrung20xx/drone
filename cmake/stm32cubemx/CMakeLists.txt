@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.22)
 # Enable CMake support for ASM and C languages
 enable_language(C ASM)
 # STM32CubeMX generated symbols (macros)
-set(MX_Defines_Syms 
-	USE_HAL_DRIVER 
+set(MX_Defines_Syms
+	USE_HAL_DRIVER
 	STM32F411xE
     $<$<CONFIG:Debug>:DEBUG>
 )
@@ -25,6 +25,11 @@ set(MX_Application_Src
     ${CMAKE_SOURCE_DIR}/Core/Src/sysmem.c
     ${CMAKE_SOURCE_DIR}/Core/Src/syscalls.c
     ${CMAKE_SOURCE_DIR}/startup_stm32f411xe.s
+    ${CMAKE_SOURCE_DIR}/Core/Src/DHT11_22.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/LCD.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/scheduler.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/tasks.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/button.c
 )
 
 # STM32 HAL/LL Drivers
@@ -59,9 +64,9 @@ set(MX_LINK_DIRS
 
 )
 # Project static libraries
-set(MX_LINK_LIBS 
+set(MX_LINK_LIBS
     STM32_Drivers
-    
+
 )
 # Interface library for includes and symbols
 add_library(stm32cubemx INTERFACE)

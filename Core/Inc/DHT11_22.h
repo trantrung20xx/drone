@@ -14,6 +14,8 @@
 
 #include "main.h"
 
+#define DHT_TIMEOUT_MS 1 // Timeout in milliseconds
+
 typedef enum {
     DHT11 = 0, // DHT11 sensor type
     DHT22      // DHT22 sensor type
@@ -37,5 +39,8 @@ uint8_t DHT11_22__readByte(DHT11_22_t* sensor);
 void    DHT11_22_Handle(DHT11_22_t* sensor);
 float   DHT11_22_ReadTemperature(DHT11_22_t* sensor);
 float   DHT11_22_ReadHumidity(DHT11_22_t* sensor);
+uint8_t waitForPinState(
+    GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState state, uint32_t timeout
+);
 
 #endif // INCLUDED_DHT11_22_H

@@ -114,6 +114,7 @@ void UART2_Process_Data_If_Ready(void) {
 void Process_UART2_Command(const char* command) {
     // Process the command received from UART
     // TODO: Implement command processing logic
+    UNUSED(command); // Suppress unused parameter warning
 }
 /* USER CODE END 0 */
 

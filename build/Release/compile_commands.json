@@ -37,6 +37,36 @@
 },
 {
   "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o CMakeFiles\\Drone.dir\\Core\\Src\\DHT11_22.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\DHT11_22.c",
+  "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\DHT11_22.c",
+  "output": "CMakeFiles\\Drone.dir\\Core\\Src\\DHT11_22.c.obj"
+},
+{
+  "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o CMakeFiles\\Drone.dir\\Core\\Src\\LCD.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\LCD.c",
+  "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\LCD.c",
+  "output": "CMakeFiles\\Drone.dir\\Core\\Src\\LCD.c.obj"
+},
+{
+  "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o CMakeFiles\\Drone.dir\\Core\\Src\\scheduler.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\scheduler.c",
+  "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\scheduler.c",
+  "output": "CMakeFiles\\Drone.dir\\Core\\Src\\scheduler.c.obj"
+},
+{
+  "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o CMakeFiles\\Drone.dir\\Core\\Src\\tasks.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\tasks.c",
+  "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\tasks.c",
+  "output": "CMakeFiles\\Drone.dir\\Core\\Src\\tasks.c.obj"
+},
+{
+  "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o CMakeFiles\\Drone.dir\\Core\\Src\\button.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\button.c",
+  "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\button.c",
+  "output": "CMakeFiles\\Drone.dir\\Core\\Src\\button.c.obj"
+},
+{
+  "directory": "C:/Users/trant/Documents/WorkSpace/Drone/build/Release",
   "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DSTM32F411xE -DUSE_HAL_DRIVER -IC:/Users/trant/Documents/WorkSpace/Drone/Core/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/trant/Documents/WorkSpace/Drone/Drivers/CMSIS/Include  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f4xx.c.obj -c C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\system_stm32f4xx.c",
   "file": "C:\\Users\\trant\\Documents\\WorkSpace\\Drone\\Core\\Src\\system_stm32f4xx.c",
   "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f4xx.c.obj"
