@@ -21,7 +21,7 @@ extern uint8_t           task_id_counter;    // Counter for generating unique Ta
 extern volatile uint32_t SCH_tick_counter;   // Current tick count
 
 #define SCH_MAX_TASKS 32 // Maximum number of tasks
-#define TICKS         10 // 10 ms tick
+#define TICKS         1  // 1 ms/tick
 
 uint32_t get_tick(void);
 void     SCH_Init(void);

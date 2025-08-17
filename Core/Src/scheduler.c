@@ -9,7 +9,7 @@ uint32_t get_tick(void) {
     return SCH_tick_counter; // Return the current tick count
 }
 
-void SCH_Init(void) {
+inline void SCH_Init(void) {
     current_task_index = 0; // Reset task index
     task_id_counter    = 1; // Reset task ID counter
 }
@@ -63,11 +63,11 @@ void SCH_Add_Task(Task_t pTask, uint32_t DELAY, uint32_t PERIOD) {
     SCH_tasks[current_task_index].Period = PERIOD / TICKS;        // Convert to ticks
     SCH_tasks[current_task_index].Delay  = now + (DELAY / TICKS); // Convert to ticks
     SCH_tasks[current_task_index].TaskID = task_id_counter++; // Assign a unique TaskID
-    heapify_up(current_task_index); // Reheapify the heap
+    heapify_up(current_task_index);                           // Reheapify the heap
     current_task_index++;
 }
 
-void SCH_Update(void) {
+inline void SCH_Update(void) {
     SCH_tick_counter++; // Increment the scheduler tick
 }
 
