@@ -164,7 +164,7 @@ int main(void) {
 
     SCH_Add_Task(ToggleLED, 1000, 2000); // Add a task to toggle LED every 2000 ms
     // Add a task to process UART data if ready, executed delay of 100 ms, period of 10 ms
-    SCH_Add_Task(UART2_Process_Data_If_Ready, 100, 10); // 100Hz
+    SCH_Add_Task(UART2_Process_Data_If_Ready, 100, 10); // 100Hz (10ms/this task)
 
     while (1) {
         /* USER CODE END WHILE */
