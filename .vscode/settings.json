@@ -13,7 +13,8 @@
 		"button.h": "c",
 		"stdint.h": "c",
 		"stm32f4xx_hal.h": "c",
-		"dht11_22.h": "c"
+		"dht11_22.h": "c",
+		"string.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "disabled"
 }
