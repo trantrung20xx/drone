@@ -29,6 +29,7 @@ set(MX_Application_Src
     ${CMAKE_SOURCE_DIR}/Core/Src/DHT11_22.c
     ${CMAKE_SOURCE_DIR}/Core/Src/scheduler.c
     ${CMAKE_SOURCE_DIR}/Core/Src/tasks.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/mpu9250.c
 )
 
 # STM32 HAL/LL Drivers
