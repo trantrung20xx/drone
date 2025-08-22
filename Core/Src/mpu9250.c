@@ -11,8 +11,8 @@ inline static void MPU9250_CS_High(MPU9250_Handle* hmpu) {
 }
 
 static void MPU9250_WriteReg(MPU9250_Handle* hmpu, uint8_t reg, uint8_t data) {
-    MPU9250_CS_Low(hmpu); // Set CS low to start communication
     uint8_t tx_data[2] = {reg & 0x7F, data}; // Write data to the reg
+    MPU9250_CS_Low(hmpu); // Set CS low to start communication
     HAL_SPI_Transmit(hmpu->hspi, tx_data, 2, WAIT_SPI_TIMEOUT);
     MPU9250_CS_High(hmpu); // Set CS high to end communication
 }
@@ -139,3 +139,4 @@ void MPU9250_ReadAll(MPU9250_Handle* hmpu, MPU9250_Data* data) {
     // Read magnetometer data
     MPU9250_ReadMagnetometer(hmpu, &data->mx, &data->my, &data->mz);
 }
+

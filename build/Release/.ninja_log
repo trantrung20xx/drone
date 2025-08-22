@@ -32,3 +32,7 @@
 29	247	7771291134695171	CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj	11146964a58e9cf4
 52	552	7771284913878272	CMakeFiles/Drone.dir/Core/Src/LCD.c.obj	386b1525beda01b2
 49	573	7771291134892138	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj	d77b4337d2dd6a5c
+18	585	7775758248707724	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+111	586	7775758249633671	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+117	587	7775758249693712	CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj	8628512b99f73d26
+587	1398	7775758254394483	Drone.elf	4fc78e7b3836d519

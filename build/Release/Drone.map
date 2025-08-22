@@ -1388,6 +1388,30 @@ Discarded input sections
                 0x00000000       0x10 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
  .bss.rx_buffer
                 0x00000000       0x10 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .text          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_WriteReg
+                0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_WriteMagReg.constprop.0
+                0x00000000       0x36 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_ReadReg
+                0x00000000       0x42 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_ReadAccel
+                0x00000000       0x60 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_ReadGyro
+                0x00000000       0x60 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_InitMagnetometer
+                0x00000000       0x54 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_Init
+                0x00000000       0x7a CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_ReadMagnetometer
+                0x00000000       0x5c CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .text.MPU9250_ReadAll
+                0x00000000       0x38 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
  .text          0x00000000       0xa0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
  .data          0x00000000        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
  .bss           0x00000000        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
@@ -1492,6 +1516,7 @@ LOAD CMakeFiles/Drone.dir/Core/Src/button.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
 LOAD CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+LOAD CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj
 START GROUP
 LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a
