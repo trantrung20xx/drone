@@ -8,7 +8,6 @@
 #include "string.h"
 #include <stdlib.h>
 
-
 /** UART **/
 
 #define RX_BUFFER_SIZE 16
@@ -32,7 +31,8 @@ void Process_UART2_Command(const char*);
 /** DHT11/22 **/
 
 // Declaration and definition
-extern DHT11_22_t* dht22;
+extern DHT11_22_t dht22;
+extern float      tempTest, humTest;
 
 // functions prototypes
 void  DHT_Init(void);

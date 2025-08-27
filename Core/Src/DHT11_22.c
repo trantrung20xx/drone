@@ -16,7 +16,7 @@ void DHT11_22__setToInputMode(DHT11_22_t* sensor) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     GPIO_InitStruct.Pin              = sensor->GPIO_Pin;
     GPIO_InitStruct.Mode             = GPIO_MODE_INPUT;
-    GPIO_InitStruct.Pull             = GPIO_NOPULL;         // No pull-up or pull-down
+    GPIO_InitStruct.Pull             = GPIO_PULLUP;         // Use pull-up resistor
     GPIO_InitStruct.Speed            = GPIO_SPEED_FREQ_LOW; // Low speed for input
     HAL_GPIO_Init(sensor->GPIOx, &GPIO_InitStruct);
 }
@@ -25,7 +25,7 @@ void DHT11_22__setToOutputMode(DHT11_22_t* sensor) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     GPIO_InitStruct.Pin              = sensor->GPIO_Pin;
     GPIO_InitStruct.Mode             = GPIO_MODE_OUTPUT_PP; // Push-pull output
-    GPIO_InitStruct.Pull             = GPIO_PULLUP;         // Use pull-up resistor
+    GPIO_InitStruct.Pull             = GPIO_NOPULL;         // No pull-up or pull-down
     GPIO_InitStruct.Speed            = GPIO_SPEED_FREQ_LOW; // Low speed for output
     HAL_GPIO_Init(sensor->GPIOx, &GPIO_InitStruct);
 }

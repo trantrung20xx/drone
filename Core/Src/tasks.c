@@ -53,19 +53,24 @@ void Process_UART2_Command(const char* command) {
 /** DHT11/22 **/
 
 // Global variables
-DHT11_22_t* dht22 = NULL;
+DHT11_22_t dht22;
 
 // functions definitions
 void DHT_Init(void) {
-    dht22 = (DHT11_22_t*)malloc(sizeof(DHT11_22_t));
-    DHT11_22_Init(dht22, GPIOB, GPIO_PIN_0, DHT22);
+    DHT11_22_Init(&dht22, GPIOB, GPIO_PIN_0, DHT22);
 }
 
-void DHT_Handle(void) { DHT11_22_Handle(dht22); }
+void DHT_Handle(void) {
+    DHT11_22_Handle(&dht22);
+}
 
-float DHT_readTemperature(void) { return DHT11_22_ReadTemperature(dht22); }
+float DHT_readTemperature(void) {
+    return DHT11_22_ReadTemperature(&dht22);
+}
 
-float DHT_readHumidity(void) { return DHT11_22_ReadHumidity(dht22); }
+float DHT_readHumidity(void) {
+    return DHT11_22_ReadHumidity(&dht22);
+}
 
 /** End DHT11/22 **/
 
