@@ -21,7 +21,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "DHT11_22.h"
 #include "scheduler.h"
 #include "tasks.h"
 
@@ -55,7 +54,7 @@ TIM_HandleTypeDef htim4;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+float tempTest = 0.0f, humTest = 0.0f;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -117,7 +116,8 @@ int main(void) {
     HAL_TIM_Base_Start_IT(&htim4);
     UART2_Init_Receive_IT(&huart2); // Start UART reception in interrupt mode
     SCH_Init();                     // Initialize the scheduler
-                                    /* USER CODE END 2 */
+    DHT_Init();
+    /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
@@ -125,11 +125,16 @@ int main(void) {
     // Add a task to process UART data if ready, executed delay of 100 ms, period of 10 ms
     SCH_Add_Task(UART2_Process_Data_If_Ready, 100, 10); // 100Hz (10ms/this task)
 
+    // Add a task to process read DHT22 sensor
+    SCH_Add_Task(DHT_Handle, 150, 500); // 500ms/this task
+
     while (1) {
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
         SCH_Dispatch_Tasks(); // Dispatch tasks
+        tempTest = DHT_readTemperature();
+        humTest  = DHT_readHumidity();
     }
     /* USER CODE END 3 */
 }

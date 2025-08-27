@@ -1,10 +1,13 @@
 #ifndef INC_TASKS_H_
 #define INC_TASKS_H_
 
+#include "DHT11_22.h"
 #include "button.h"
+#include "mpu9250.h"
 #include "stm32f4xx_hal.h"
 #include "string.h"
-#include "mpu9250.h"
+#include <stdlib.h>
+
 
 /** UART **/
 
@@ -25,5 +28,18 @@ void UART2_Process_Data_If_Ready(void);
 void Process_UART2_Command(const char*);
 
 /** End UART **/
+
+/** DHT11/22 **/
+
+// Declaration and definition
+extern DHT11_22_t* dht22;
+
+// functions prototypes
+void  DHT_Init(void);
+void  DHT_Handle(void);
+float DHT_readTemperature(void);
+float DHT_readHumidity(void);
+
+/** End DHT11/22 **/
 
 #endif /* INC_TASKS_H_ */

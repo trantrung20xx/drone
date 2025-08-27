@@ -1,7 +1,7 @@
 # ninja log v7
 55	567	7733134324213890	CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj	6866d2b0d8eab01d
 41	529	7733134324081934	CMakeFiles/Drone.dir/Core/Src/sysmem.c.obj	baf5b2033bb4d9b8
-7	390	7773646590440272	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+21	268	7779633723929278	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
 34	524	7771284913694006	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj	d157174414d6a8ec
 94	567	7771284914295338	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj	c20e16792cb78622
 25	397	7771284913606557	CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj	62f2fb52caee7438
@@ -24,15 +24,16 @@
 874	1630	7771284922092940	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj	fb03c2e6d954d5
 105	1642	7771284914405149	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj	ed4f14abb625d648
 766	1862	7771284921017697	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj	570f3757f264f303
-390	683	7773646594266125	Drone.elf	91bcb29771d94468
+268	442	7779633726386986	Drone.elf	4fc78e7b3836d519
 37	137	7734411457893794	CMakeFiles/Drone.dir/Core/Src/software_timer.c.obj	ca7173fd81b72f16
 35	201	7771291134761304	CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj	132ce863ec688fcc
-18	307	7773646590555531	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+33	241	7779632122434648	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
 23	226	7771291134633612	CMakeFiles/Drone.dir/Core/Src/button.c.obj	567a9864ed4fa7c2
 29	247	7771291134695171	CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj	11146964a58e9cf4
 52	552	7771284913878272	CMakeFiles/Drone.dir/Core/Src/LCD.c.obj	386b1525beda01b2
 49	573	7771291134892138	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj	d77b4337d2dd6a5c
-18	585	7775758248707724	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
-111	586	7775758249633671	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
-117	587	7775758249693712	CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj	8628512b99f73d26
-587	1398	7775758254394483	Drone.elf	4fc78e7b3836d519
+46	493	7779625466111657	CMakeFiles/Drone.dir/Core/Src/mpu9250.c.obj	8628512b99f73d26
+4	424	7779696905821126	CMakeFiles/Drone.dir/Core/Src/main.c.obj	461fe4824cdb8917
+425	1043	7779696909961653	Drone.elf	4fc78e7b3836d519
+5	183	7779699690601182	CMakeFiles/Drone.dir/Core/Src/tasks.c.obj	46b2e8cf3bc97e2
+184	356	7779699692399850	Drone.elf	4fc78e7b3836d519
