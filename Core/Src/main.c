@@ -116,7 +116,7 @@ int main(void) {
     HAL_TIM_Base_Start_IT(&htim4);
     UART2_Init_Receive_IT(&huart2); // Start UART reception in interrupt mode
     SCH_Init();                     // Initialize the scheduler
-    DHT_Init();
+    DHT_Init();                     // Initialize DHT22 sensor
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -126,7 +126,7 @@ int main(void) {
     SCH_Add_Task(UART2_Process_Data_If_Ready, 100, 10); // 100Hz (10ms/this task)
 
     // Add a task to process read DHT22 sensor
-    SCH_Add_Task(DHT_Handle, 150, 500); // 500ms/this task
+    SCH_Add_Task(DHT_Handle, 2000, 1000); // 1000ms/this task
 
     while (1) {
         /* USER CODE END WHILE */

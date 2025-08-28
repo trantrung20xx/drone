@@ -14,7 +14,7 @@
 
 #include "main.h"
 
-#define DHT_TIMEOUT_MS 1 // Timeout in milliseconds
+#define DHT_TIMEOUT_US 150 // Timeout in microseconds
 
 typedef enum {
     DHT11 = 0, // DHT11 sensor type
@@ -34,7 +34,7 @@ void DHT11_22_Init(
 );
 void    DHT11_22__setToInputMode(DHT11_22_t* sensor);
 void    DHT11_22__setToOutputMode(DHT11_22_t* sensor);
-void    DHT11_22__sendStartSignal(DHT11_22_t* sensor);
+uint8_t DHT11_22__sendStartSignal(DHT11_22_t* sensor);
 uint8_t DHT11_22__readByte(DHT11_22_t* sensor);
 void    DHT11_22_Handle(DHT11_22_t* sensor);
 float   DHT11_22_ReadTemperature(DHT11_22_t* sensor);
