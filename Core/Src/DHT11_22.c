@@ -37,9 +37,9 @@ uint8_t DHT11_22__sendStartSignal(DHT11_22_t *sensor)
     DHT11_22__setToOutputMode(sensor);                                  // Set to output mode
     HAL_GPIO_WritePin(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_RESET); // Pull pin low
     if (sensor->type == DHT11)
-        HAL_Delay(18); // Hold low for at least 18 ms for DHT11
+        delay_us(20000); // Hold low for at least 20 ms for DHT11
     else               // DHT22
-        HAL_Delay(1);  // Hold low for 1 ms
+        delay_us(1500);  // Hold low for 1.5 ms
     HAL_GPIO_WritePin(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_SET); // Release pin
     delay_us(30);                                                     // Wait for 20-40 us
     DHT11_22__setToInputMode(sensor);
