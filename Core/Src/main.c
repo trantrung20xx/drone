@@ -127,7 +127,7 @@ int main(void)
     SCH_Add_Task(UART2_Process_Data_If_Ready, 100, 10); // 100Hz (10ms/this task)
 
     // Add a task to process read DHT22 sensor
-    SCH_Add_Task(DHT_Handle, 2000, 1000); // 1000ms/this task
+    SCH_Add_Task(DHT_Handle, 2000, 2500); // 2.5s/this task
 
     while (1)
     {

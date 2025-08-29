@@ -18,5 +18,5 @@
 		"mpu9250.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "disabled",
-	"cortex-debug.variableUseNaturalFormat": false
+	"cortex-debug.variableUseNaturalFormat": true
 }
