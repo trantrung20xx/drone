@@ -6,7 +6,8 @@
 
 typedef void (*Task_t)(void);
 
-typedef struct {
+typedef struct
+{
     Task_t   pTask;
     uint32_t Period; // in milliseconds
     uint32_t Delay;  // in milliseconds

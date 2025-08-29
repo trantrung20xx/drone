@@ -29,24 +29,26 @@
 #define AK8963_HXL              0x03
 
 // ================================= Struct management ============================
-typedef struct {
-    SPI_HandleTypeDef* hspi;    // Pointer to the SPI handle
-    GPIO_TypeDef*      cs_port; // Chip select port
+typedef struct
+{
+    SPI_HandleTypeDef *hspi;    // Pointer to the SPI handle
+    GPIO_TypeDef      *cs_port; // Chip select port
     uint8_t            cs_pin;  // Chip select pin
 } MPU9250_Handle;
 
-typedef struct {
+typedef struct
+{
     float ax, ay, az; // Accelerometer data
     float gx, gy, gz; // Gyroscope data
     float mx, my, mz; // Magnetometer data
 } MPU9250_Data;
 
 // ================================= Function prototypes ============================
-void MPU9250_Init(MPU9250_Handle* hmpu);
-void MPU9250_ReadAccel(MPU9250_Handle* hmpu, float* ax, float* ay, float* az);
-void MPU9250_ReadGyro(MPU9250_Handle* hmpu, float* gx, float* gy, float* gz);
-void MPU9250_InitMagnetometer(MPU9250_Handle* hmpu);
-void MPU9250_ReadMagnetometer(MPU9250_Handle* hmpu, float* mx, float* my, float* mz);
-void MPU9250_ReadAll(MPU9250_Handle* hmpu, MPU9250_Data* data);
+void MPU9250_Init(MPU9250_Handle *hmpu);
+void MPU9250_ReadAccel(MPU9250_Handle *hmpu, float *ax, float *ay, float *az);
+void MPU9250_ReadGyro(MPU9250_Handle *hmpu, float *gx, float *gy, float *gz);
+void MPU9250_InitMagnetometer(MPU9250_Handle *hmpu);
+void MPU9250_ReadMagnetometer(MPU9250_Handle *hmpu, float *mx, float *my, float *mz);
+void MPU9250_ReadAll(MPU9250_Handle *hmpu, MPU9250_Data *data);
 
 #endif /* INC_MPU9250_H_ */
