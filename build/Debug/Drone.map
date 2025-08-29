@@ -3803,7 +3803,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .text.SCH_Delete_Task
-                0x00000000       0x78 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x00000000       0x88 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
@@ -4174,7 +4174,7 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x08000198                        . = ALIGN (0x4)
 
-.text           0x08000198     0x4a20
+.text           0x08000198     0x4a24
                 0x08000198                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000198       0x40 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -4534,164 +4534,158 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x080043d8                DMA2_Stream6_IRQHandler
                 0x080043d8                DMA1_Stream3_IRQHandler
  .text.DHT11_22_Init
-                0x080043da       0x58 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x080043da       0x8c CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
                 0x080043da                DHT11_22_Init
- .text.DHT11_22__setToInputMode
-                0x08004432       0x42 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x08004432                DHT11_22__setToInputMode
- .text.DHT11_22__setToOutputMode
-                0x08004474       0x42 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x08004474                DHT11_22__setToOutputMode
  .text.DHT11_22__sendStartSignal
-                0x080044b6       0xaa CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x080044b6                DHT11_22__sendStartSignal
+                0x08004466       0x9e CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x08004466                DHT11_22__sendStartSignal
  .text.DHT11_22__readByte
-                0x08004560       0x90 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x08004560                DHT11_22__readByte
+                0x08004504       0x90 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x08004504                DHT11_22__readByte
  .text.DHT11_22_Handle
-                0x080045f0       0x74 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x080045f0                DHT11_22_Handle
+                0x08004594       0x74 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x08004594                DHT11_22_Handle
  .text.DHT11_22_ReadHumidity
-                0x08004664       0x54 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x08004664                DHT11_22_ReadHumidity
+                0x08004608       0x54 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x08004608                DHT11_22_ReadHumidity
  .text.DHT11_22_ReadTemperature
-                0x080046b8       0x7c CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x080046b8                DHT11_22_ReadTemperature
+                0x0800465c       0x7c CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x0800465c                DHT11_22_ReadTemperature
  .text.waitForPinState
-                0x08004734       0x46 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
-                0x08004734                waitForPinState
- *fill*         0x0800477a        0x2 
+                0x080046d8       0x46 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x080046d8                waitForPinState
+ *fill*         0x0800471e        0x2 
  .text.get_tick
-                0x0800477c       0x18 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x0800477c                get_tick
+                0x08004720       0x18 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08004720                get_tick
  .text.SCH_Init
-                0x08004794       0x24 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08004794                SCH_Init
- .text.swap     0x080047b8       0x3a CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x080047b8                swap
- *fill*         0x080047f2        0x2 
+                0x08004738       0x2c CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08004738                SCH_Init
+ .text.swap     0x08004764       0x3a CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08004764                swap
+ *fill*         0x0800479e        0x2 
  .text.heapify_up
-                0x080047f4       0x60 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x080047f4                heapify_up
+                0x080047a0       0x64 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x080047a0                heapify_up
  .text.heapify_down
-                0x08004854       0xac CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08004854                heapify_down
+                0x08004804       0xb0 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08004804                heapify_down
  .text.SCH_Add_Task
-                0x08004900       0x9c CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x08004900                SCH_Add_Task
+                0x080048b4       0x9c CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x080048b4                SCH_Add_Task
  .text.SCH_Update
-                0x0800499c       0x1c CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x0800499c                SCH_Update
+                0x08004950       0x1c CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x08004950                SCH_Update
  .text.SCH_Dispatch_Tasks
-                0x080049b8       0x80 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
-                0x080049b8                SCH_Dispatch_Tasks
+                0x0800496c       0xd0 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x0800496c                SCH_Dispatch_Tasks
  .text.UART2_Init_Receive_IT
-                0x08004a38       0x34 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004a38                UART2_Init_Receive_IT
+                0x08004a3c       0x34 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004a3c                UART2_Init_Receive_IT
  .text.UART2_Receive_Handler
-                0x08004a6c       0x88 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004a6c                UART2_Receive_Handler
+                0x08004a70       0x88 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004a70                UART2_Receive_Handler
  .text.UART2_Process_Data_If_Ready
-                0x08004af4       0x28 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004af4                UART2_Process_Data_If_Ready
+                0x08004af8       0x28 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004af8                UART2_Process_Data_If_Ready
  .text.Process_UART2_Command
-                0x08004b1c       0x14 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004b1c                Process_UART2_Command
+                0x08004b20       0x14 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004b20                Process_UART2_Command
  .text.DHT_Init
-                0x08004b30       0x1c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004b30                DHT_Init
+                0x08004b34       0x1c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004b34                DHT_Init
  .text.DHT_Handle
-                0x08004b4c       0x14 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004b4c                DHT_Handle
+                0x08004b50       0x14 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004b50                DHT_Handle
  .text.DHT_readTemperature
-                0x08004b60       0x18 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004b60                DHT_readTemperature
+                0x08004b64       0x18 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004b64                DHT_readTemperature
  .text.DHT_readHumidity
-                0x08004b78       0x18 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
-                0x08004b78                DHT_readHumidity
- .text.strcpy   0x08004b90       0x10 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
-                0x08004b90                strcpy
+                0x08004b7c       0x18 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x08004b7c                DHT_readHumidity
+ .text.strcpy   0x08004b94       0x10 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+                0x08004b94                strcpy
  *(.glue_7)
- .glue_7        0x08004ba0        0x0 linker stubs
+ .glue_7        0x08004ba4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08004ba0        0x0 linker stubs
+ .glue_7t       0x08004ba4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08004ba0        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08004ba4        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08004ba0        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08004ba0                _init
- .init          0x08004ba4        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08004ba4        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004ba4                _init
+ .init          0x08004ba8        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08004bac        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08004bac                _fini
- .fini          0x08004bb0        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08004bb8                        . = ALIGN (0x4)
-                0x08004bb8                        _etext = .
+ .fini          0x08004bb0        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004bb0                _fini
+ .fini          0x08004bb4        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08004bbc                        . = ALIGN (0x4)
+                0x08004bbc                        _etext = .
 
-.vfp11_veneer   0x08004bb8        0x0
- .vfp11_veneer  0x08004bb8        0x0 linker stubs
+.vfp11_veneer   0x08004bbc        0x0
+ .vfp11_veneer  0x08004bbc        0x0 linker stubs
 
-.v4_bx          0x08004bb8        0x0
- .v4_bx         0x08004bb8        0x0 linker stubs
+.v4_bx          0x08004bbc        0x0
+ .v4_bx         0x08004bbc        0x0 linker stubs
 
-.iplt           0x08004bb8        0x0
- .iplt          0x08004bb8        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08004bbc        0x0
+ .iplt          0x08004bbc        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08004bb8       0x18
-                0x08004bb8                        . = ALIGN (0x4)
+.rodata         0x08004bbc       0x18
+                0x08004bbc                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x08004bb8       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08004bb8                AHBPrescTable
+                0x08004bbc       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08004bbc                AHBPrescTable
  .rodata.APBPrescTable
-                0x08004bc8        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08004bc8                APBPrescTable
-                0x08004bd0                        . = ALIGN (0x4)
+                0x08004bcc        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08004bcc                APBPrescTable
+                0x08004bd4                        . = ALIGN (0x4)
 
-.ARM.extab      0x08004bd0        0x0
-                0x08004bd0                        . = ALIGN (0x4)
+.ARM.extab      0x08004bd4        0x0
+                0x08004bd4                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004bd0                        . = ALIGN (0x4)
+                0x08004bd4                        . = ALIGN (0x4)
 
-.ARM            0x08004bd0        0x8
-                0x08004bd0                        . = ALIGN (0x4)
-                0x08004bd0                        __exidx_start = .
+.ARM            0x08004bd4        0x8
+                0x08004bd4                        . = ALIGN (0x4)
+                0x08004bd4                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08004bd0        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08004bd8                        __exidx_end = .
-                0x08004bd8                        . = ALIGN (0x4)
+ .ARM.exidx     0x08004bd4        0x8 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08004bdc                        __exidx_end = .
+                0x08004bdc                        . = ALIGN (0x4)
 
-.preinit_array  0x08004bd8        0x0
-                0x08004bd8                        . = ALIGN (0x4)
-                0x08004bd8                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004bdc        0x0
+                0x08004bdc                        . = ALIGN (0x4)
+                0x08004bdc                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004bd8                        PROVIDE (__preinit_array_end = .)
-                0x08004bd8                        . = ALIGN (0x4)
+                0x08004bdc                        PROVIDE (__preinit_array_end = .)
+                0x08004bdc                        . = ALIGN (0x4)
 
-.init_array     0x08004bd8        0x4
-                0x08004bd8                        . = ALIGN (0x4)
-                0x08004bd8                        PROVIDE (__init_array_start = .)
+.init_array     0x08004bdc        0x4
+                0x08004bdc                        . = ALIGN (0x4)
+                0x08004bdc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08004bd8        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08004bdc                        PROVIDE (__init_array_end = .)
-                0x08004bdc                        . = ALIGN (0x4)
+ .init_array    0x08004bdc        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08004be0                        PROVIDE (__init_array_end = .)
+                0x08004be0                        . = ALIGN (0x4)
 
-.fini_array     0x08004bdc        0x4
-                0x08004bdc                        . = ALIGN (0x4)
+.fini_array     0x08004be0        0x4
+                0x08004be0                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004bdc        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08004be0        0x4 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08004be0                        . = ALIGN (0x4)
-                0x08004be0                        _sidata = LOADADDR (.data)
+                0x08004be4                        . = ALIGN (0x4)
+                0x08004be4                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08004be0        0x0
- .rel.iplt      0x08004be0        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08004be4        0x0
+ .rel.iplt      0x08004be4        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000        0xc load address 0x08004be0
+.data           0x20000000        0xc load address 0x08004be4
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -4714,11 +4708,11 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  *fill*         0x2000000a        0x2 
                 0x2000000c                        _edata = .
 
-.igot.plt       0x2000000c        0x0 load address 0x08004bec
+.igot.plt       0x2000000c        0x0 load address 0x08004bf0
  .igot.plt      0x2000000c        0x0 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x2000000c                        . = ALIGN (0x4)
 
-.bss            0x2000000c      0x47c load address 0x08004bec
+.bss            0x2000000c      0x47c load address 0x08004bf0
                 0x2000000c                        _sbss = .
                 0x2000000c                        __bss_start__ = _sbss
  *(.bss)
@@ -4778,7 +4772,7 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x20000488                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000488     0x1000 load address 0x08004bec
+                0x20000488     0x1000 load address 0x08004bf0
                 0x20000488                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20000488                        PROVIDE (_end = .)
@@ -4876,7 +4870,7 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .comment       0x00000043       0x44 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
  .comment       0x00000043       0x44 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
-.debug_frame    0x00000000     0x4de0
+.debug_frame    0x00000000     0x4d94
  .debug_frame   0x00000000       0x20 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
  .debug_frame   0x00000020       0x2c C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
  .debug_frame   0x0000004c       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -4893,14 +4887,14 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_frame   0x000044a0      0x1dc CMakeFiles/Drone.dir/Core/Src/main.c.obj
  .debug_frame   0x0000467c      0x158 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_frame   0x000047d4      0x1cc CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x000049a0      0x160 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
- .debug_frame   0x00004b00      0x154 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .debug_frame   0x00004c54      0x10c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
- .debug_frame   0x00004d60       0x2c C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00004d8c       0x34 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00004dc0       0x20 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+ .debug_frame   0x000049a0      0x114 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .debug_frame   0x00004ab4      0x154 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+ .debug_frame   0x00004c08      0x10c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .debug_frame   0x00004d14       0x2c C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00004d40       0x34 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00004d74       0x20 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
-.debug_info     0x00000000    0x128e1
+.debug_info     0x00000000    0x128ed
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x0000053e     0x2426 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
  .debug_info    0x00002964      0x904 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -4916,12 +4910,12 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_info    0x0000f6a5      0x99f CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_info    0x00010044     0x15df CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_info    0x00011623       0x30 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
- .debug_info    0x00011653      0x566 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
- .debug_info    0x00011bb9      0x339 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .debug_info    0x00011ef2      0x92c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
- .debug_info    0x0001281e       0xc3 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+ .debug_info    0x00011653      0x510 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .debug_info    0x00011b63      0x39b CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+ .debug_info    0x00011efe      0x92c CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .debug_info    0x0001282a       0xc3 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
-.debug_abbrev   0x00000000     0x2823
+.debug_abbrev   0x00000000     0x2807
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x2bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
  .debug_abbrev  0x000003d6      0x2b6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -4937,12 +4931,12 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_abbrev  0x00001dbe      0x1af CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_abbrev  0x00001f6d      0x255 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_abbrev  0x000021c2       0x24 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
- .debug_abbrev  0x000021e6      0x20d CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
- .debug_abbrev  0x000023f3      0x18a CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .debug_abbrev  0x0000257d      0x22b CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
- .debug_abbrev  0x000027a8       0x7b C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+ .debug_abbrev  0x000021e6      0x1f2 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .debug_abbrev  0x000023d8      0x189 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+ .debug_abbrev  0x00002561      0x22b CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .debug_abbrev  0x0000278c       0x7b C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
-.debug_aranges  0x00000000     0x1248
+.debug_aranges  0x00000000     0x1238
  .debug_aranges
                 0x00000000       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
@@ -4974,16 +4968,16 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_aranges
                 0x000010e8       0x28 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
  .debug_aranges
-                0x00001110       0x60 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x00001110       0x50 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
  .debug_aranges
-                0x00001170       0x60 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x00001160       0x60 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_aranges
-                0x000011d0       0x58 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x000011c0       0x58 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
  .debug_aranges
-                0x00001228       0x20 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+                0x00001218       0x20 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
 .debug_rnglists
-                0x00000000      0xe8a
+                0x00000000      0xe8d
  .debug_rnglists
                 0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
@@ -5015,13 +5009,13 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_rnglists
                 0x00000d7a       0x19 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
  .debug_rnglists
-                0x00000d93       0x45 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+                0x00000d93       0x3a CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
  .debug_rnglists
-                0x00000dd8       0x61 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+                0x00000dcd       0x6f CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_rnglists
-                0x00000e39       0x3e CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+                0x00000e3c       0x3e CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
  .debug_rnglists
-                0x00000e77       0x13 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+                0x00000e7a       0x13 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
 .debug_macro    0x00000000    0x1725b
  .debug_macro   0x00000000      0x1f1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -5105,7 +5099,7 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_macro   0x00016ea7       0x7b CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
  .debug_macro   0x00016f22      0x339 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
 
-.debug_line     0x00000000    0x1434d
+.debug_line     0x00000000    0x14344
  .debug_line    0x00000000      0x754 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x00000754     0x3a7d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
  .debug_line    0x000041d1      0xddd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5121,32 +5115,32 @@ LOAD C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_line    0x00011ac2      0x7d5 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_line    0x00012297      0x8af CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_line    0x00012b46       0x7a CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
- .debug_line    0x00012bc0      0x916 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
- .debug_line    0x000134d6      0x4cb CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .debug_line    0x000139a1      0x8b6 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
- .debug_line    0x00014257       0xf6 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+ .debug_line    0x00012bc0      0x8da CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .debug_line    0x0001349a      0x4fe CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+ .debug_line    0x00013998      0x8b6 CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .debug_line    0x0001424e       0xf6 C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
-.debug_str      0x00000000    0x9222d
- .debug_str     0x00000000    0x9222d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0x9220e
+ .debug_str     0x00000000    0x9220e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0x8a123 (size before relaxing)
- .debug_str     0x0009222d    0x8b134 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
- .debug_str     0x0009222d    0x8a557 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x0009222d    0x8a29e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x0009222d    0x8a52b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x0009222d    0x8a8b9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x0009222d    0x8ab4f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x0009222d    0x8a9cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_str     0x0009222d    0x8b49b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x0009222d    0x8aca7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x0009222d    0x8ab26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x0009222d    0x8e5c1 CMakeFiles/Drone.dir/Core/Src/main.c.obj
- .debug_str     0x0009222d    0x8a7ab CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x0009222d    0x8b113 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x0009222d       0x90 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
- .debug_str     0x0009222d    0x8a1c5 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
- .debug_str     0x0009222d     0x4264 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
- .debug_str     0x0009222d    0x8d52a CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
- .debug_str     0x0009222d      0x20f C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
+ .debug_str     0x0009220e    0x8b134 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+ .debug_str     0x0009220e    0x8a557 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x0009220e    0x8a29e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x0009220e    0x8a52b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x0009220e    0x8a8b9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x0009220e    0x8ab4f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x0009220e    0x8a9cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x0009220e    0x8b49b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x0009220e    0x8aca7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x0009220e    0x8ab26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x0009220e    0x8e5c1 CMakeFiles/Drone.dir/Core/Src/main.c.obj
+ .debug_str     0x0009220e    0x8a7ab CMakeFiles/Drone.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x0009220e    0x8b113 CMakeFiles/Drone.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0009220e       0x90 CMakeFiles/Drone.dir/startup_stm32f411xe.s.obj
+ .debug_str     0x0009220e    0x8a192 CMakeFiles/Drone.dir/Core/Src/DHT11_22.c.obj
+ .debug_str     0x0009220e     0x4278 CMakeFiles/Drone.dir/Core/Src/scheduler.c.obj
+ .debug_str     0x0009220e    0x8d52a CMakeFiles/Drone.dir/Core/Src/tasks.c.obj
+ .debug_str     0x0009220e      0x20f C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strcpy.o)
 
 .debug_line_str
                 0x00000000       0x74
