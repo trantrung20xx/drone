@@ -36,9 +36,12 @@ uint8_t DHT11_22__sendStartSignal(DHT11_22_t *sensor)
 {
     DHT11_22__setToOutputMode(sensor);                                  // Set to output mode
     HAL_GPIO_WritePin(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_RESET); // Pull pin low
-    HAL_Delay(18);                                                      // Hold low for 18 ms
-    HAL_GPIO_WritePin(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_SET);   // Release pin
-    delay_us(30);                                                       // Wait for 20-40 us
+    if (sensor->type == DHT11)
+        HAL_Delay(18); // Hold low for at least 18 ms for DHT11
+    else               // DHT22
+        HAL_Delay(1);  // Hold low for 1 ms
+    HAL_GPIO_WritePin(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_SET); // Release pin
+    delay_us(30);                                                     // Wait for 20-40 us
     DHT11_22__setToInputMode(sensor);
     if (!waitForPinState(sensor->GPIOx, sensor->GPIO_Pin, GPIO_PIN_RESET, DHT_TIMEOUT_US))
         return 0; // Wait for the pin to go low
@@ -103,7 +106,8 @@ void DHT11_22_Handle(DHT11_22_t *sensor)
     sensor->checksum = sensor->data[4]; // byte 5 is checksum
     __enable_irq();                     // Enable interrupts
     // Validate checksum
-    if (sensor->data[0] + sensor->data[1] + sensor->data[2] + sensor->data[3] != sensor->checksum)
+    uint16_t sum = (uint16_t)sensor->data[0] + sensor->data[1] + sensor->data[2] + sensor->data[3];
+    if ((sum & 0xFF) != sensor->checksum)
     {
         // Checksum is invalid, handle error
     }

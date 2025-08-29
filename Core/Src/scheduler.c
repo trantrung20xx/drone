@@ -75,8 +75,8 @@ void SCH_Add_Task(Task_t pTask, uint32_t DELAY, uint32_t PERIOD)
     SCH_tasks[current_task_index].Period = PERIOD / TICKS;        // Convert to ticks
     SCH_tasks[current_task_index].Delay  = now + (DELAY / TICKS); // Convert to ticks
     SCH_tasks[current_task_index].TaskID = task_id_counter++;     // Assign a unique TaskID
-    heapify_up(current_task_index);                               // Reheapify the heap
-    current_task_index++;
+    current_task_index++;                                         // Add a new task to the scheduler
+    heapify_up(current_task_index - 1);                           // Reheapify the heap
 }
 
 inline void SCH_Update(void)
@@ -101,8 +101,8 @@ void SCH_Dispatch_Tasks(void)
         {
             // If it is a one-time task, remove it
             SCH_tasks[0] = SCH_tasks[current_task_index - 1];
-            heapify_down(0); // Reheapify the heap
-            current_task_index--;
+            current_task_index--; // Decrease the task count
+            heapify_down(0);      // Reheapify the heap
         }
     }
 }
@@ -116,7 +116,8 @@ void SCH_Delete_Task(uint32_t TaskID)
             // Replace the task to be deleted with the last task in the heap
             SCH_tasks[i] = SCH_tasks[current_task_index - 1];
             current_task_index--; // Decrease the task count
-            heapify_down(i);      // Reheapify the heap
+            heapify_down(i);      // Reheapify the heap, if delay greater than parent
+            heapify_up(i);        // Reheapify the heap, if delay less than parent
             return;               // Task found and deleted
         }
     }
